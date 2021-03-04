@@ -1,0 +1,15 @@
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);  #serial is use to connect with monitor and Ard.
+}
+
+void loop()
+{
+  int lightread=analogRead(A0);
+  Serial.println(lightread);
+  delay(5);
+  
+  
+  
+}
