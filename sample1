@@ -1,0 +1,21 @@
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  
+  int lightread=analogRead(A0);
+  if (lightread>=80 && lightread<=120)
+  {
+    Serial.println("");
+    Serial.print("BPM : ");
+    Serial.print(lightread);
+    delay(1000);
+    
+  }
+ 
+}
+
